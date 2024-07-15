@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-07-15T09:25:38.367291" rpa="false" schemaversion="5">
+<suite id="s1" name="TestHomepage" source="E:\SDET-Practice Project\Robot Framework\OpenCart\TestCases\TestHomepage.robot">
+<test id="s1-t1" name="To verify feature option" line="10">
+<kw name="Opening the browser with url" owner="Genericresource" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-15T09:25:38.940138" level="INFO">Opening browser 'Chrome' to base url 'https://www.opencart.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-15T09:25:38.940138" elapsed="7.699086"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-15T09:25:46.639224" elapsed="0.031380"/>
+</kw>
+<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-07-15T09:25:46.670604" elapsed="0.004195"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:25:38.940138" elapsed="7.734661"/>
+</kw>
+<kw name="To click on feature option">
+<kw name="Click on feature option" owner="Homepageresource">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-07-15T09:25:46.675318" level="INFO">Clicking link '(//a[text()="Features"])[1]'.</msg>
+<arg>${feature_l}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-15T09:25:46.675318" elapsed="8.369330"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:25:46.675318" elapsed="8.369330"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:25:46.675318" elapsed="8.369330"/>
+</kw>
+<kw name="To verify navigation to feature page">
+<kw name="Assert feature page" owner="Homepageresource">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-07-15T09:25:55.047567" level="INFO">Verifying element '//div[@id='cms-feature']/div/div/h1[text()="OpenCart Features"]' contains exact text 'OpenCart Features'.</msg>
+<arg>${featurepg_l}</arg>
+<arg>OpenCart Features</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-07-15T09:25:55.047567" elapsed="0.049902"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:25:55.047567" elapsed="0.049902"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:25:55.047045" elapsed="0.050424"/>
+</kw>
+<kw name="Close the browser" owner="Genericresource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-15T09:25:55.097469" elapsed="2.342655"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:25:55.097469" elapsed="2.342655"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:25:38.929037" elapsed="18.511087"/>
+</test>
+<test id="s1-t2" name="To verify demo option" line="13">
+<kw name="Opening the browser with url" owner="Genericresource" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-15T09:25:57.443082" level="INFO">Opening browser 'Chrome' to base url 'https://www.opencart.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-15T09:25:57.443082" elapsed="6.236893"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-15T09:26:03.679975" elapsed="0.041066"/>
+</kw>
+<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-07-15T09:26:03.721041" elapsed="0.002403"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:25:57.443082" elapsed="6.280362"/>
+</kw>
+<kw name="To click on demo option">
+<kw name="Click on demo option" owner="Homepageresource">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-07-15T09:26:03.725781" level="INFO">Clicking link '(//a[text()="Demo"])[1]'.</msg>
+<arg>${demo_l}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-15T09:26:03.725781" elapsed="4.131176"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:26:03.725781" elapsed="4.131656"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:26:03.725781" elapsed="4.131656"/>
+</kw>
+<kw name="To verify navigation to demo page">
+<kw name="Assert demo page" owner="Homepageresource">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-07-15T09:26:07.859772" level="INFO">Verifying element '//div[@id="cms-demo"]/div/div/h1[text()="OpenCart Demonstration"]' contains exact text 'OpenCart Demonstration'.</msg>
+<arg>${demopg_l}</arg>
+<arg>OpenCart Demonstration</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-07-15T09:26:07.859251" elapsed="0.038725"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:26:07.858183" elapsed="0.039793"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:26:07.858183" elapsed="0.039793"/>
+</kw>
+<kw name="Close the browser" owner="Genericresource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-15T09:26:07.897976" elapsed="2.333716"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:26:07.897976" elapsed="2.333716"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:25:57.443082" elapsed="12.788610"/>
+</test>
+<test id="s1-t3" name="To verify market option" line="16">
+<kw name="Opening the browser with url" owner="Genericresource" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-15T09:26:10.231692" level="INFO">Opening browser 'Chrome' to base url 'https://www.opencart.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-15T09:26:10.231692" elapsed="5.462726"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-15T09:26:15.694418" elapsed="0.033357"/>
+</kw>
+<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-07-15T09:26:15.727775" elapsed="0.007318"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:26:10.231692" elapsed="5.503401"/>
+</kw>
+<kw name="To click on market option">
+<kw name="Click on marketing option" owner="Homepageresource">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-07-15T09:26:15.735093" level="INFO">Clicking link '(//a[text()="Marketplace"])[1]'.</msg>
+<arg>${market_l}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-15T09:26:15.735093" elapsed="1.670278"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:26:15.735093" elapsed="1.670278"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:26:15.735093" elapsed="1.670278"/>
+</kw>
+<kw name="To verify navigation to market page">
+<kw name="Assert marketing option" owner="Homepageresource">
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2024-07-15T09:26:17.440733" level="INFO">Element '//div/h1[text()="Welcome to OpenCart Extension Store"]' contains text 'Welcome to OpenCart Extension Store'.</msg>
+<arg>${marketpg_l}</arg>
+<arg>Welcome to OpenCart Extension Store</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2024-07-15T09:26:17.407510" elapsed="0.033223"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:26:17.406449" elapsed="0.038250"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:26:17.406449" elapsed="0.038250"/>
+</kw>
+<kw name="Close the browser" owner="Genericresource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-15T09:26:17.446115" elapsed="2.328268"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:26:17.444699" elapsed="2.329684"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:26:10.231692" elapsed="9.542691"/>
+</test>
+<test id="s1-t4" name="To verify blog option" line="19">
+<kw name="Opening the browser with url" owner="Genericresource" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-15T09:26:19.774383" level="INFO">Opening browser 'Chrome' to base url 'https://www.opencart.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-15T09:26:19.774383" elapsed="6.383095"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-15T09:26:26.157478" elapsed="0.038950"/>
+</kw>
+<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-07-15T09:26:26.197435" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:26:19.774383" elapsed="6.423052"/>
+</kw>
+<kw name="To click on blog option">
+<kw name="Click blog option" owner="Homepageresource">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-07-15T09:26:26.202443" level="INFO">Clicking link '//a[text()="Blog"]'.</msg>
+<arg>${blog_l}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-15T09:26:26.202443" elapsed="2.991540"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:26:26.202443" elapsed="2.991540"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:26:26.197435" elapsed="2.996548"/>
+</kw>
+<kw name="To verify navigation to blog page">
+<kw name="Assert blog option" owner="Homepageresource">
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2024-07-15T09:26:29.241862" level="INFO">Element '//h1[text()="Welcome to OpenCart Ecommerce Blog"]' contains text 'Welcome to OpenCart Ecommerce Blog'.</msg>
+<arg>${blogpg_l}</arg>
+<arg>Welcome to OpenCart Ecommerce Blog</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2024-07-15T09:26:29.193983" elapsed="0.047879"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:26:29.193983" elapsed="0.047879"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:26:29.193983" elapsed="0.047879"/>
+</kw>
+<kw name="Close the browser" owner="Genericresource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-15T09:26:29.244075" elapsed="2.354801"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:26:29.244075" elapsed="2.354801"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:26:19.774383" elapsed="11.825773"/>
+</test>
+<test id="s1-t5" name="To verify download option" line="22">
+<kw name="Opening the browser with url" owner="Genericresource" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-15T09:26:31.603517" level="INFO">Opening browser 'Chrome' to base url 'https://www.opencart.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-15T09:26:31.600156" elapsed="6.912302"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-15T09:26:38.512458" elapsed="0.042246"/>
+</kw>
+<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-07-15T09:26:38.554704" elapsed="0.004077"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:26:31.600156" elapsed="6.958625"/>
+</kw>
+<kw name="To click on download option">
+<kw name="Click download option" owner="Homepageresource">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-07-15T09:26:38.559821" level="INFO">Clicking link '(//a[text()="Download"])[1]'.</msg>
+<arg>${download_l}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-15T09:26:38.559821" elapsed="3.224315"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:26:38.559821" elapsed="3.224315"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:26:38.559821" elapsed="3.224315"/>
+</kw>
+<kw name="To verify navigation to download page">
+<kw name="Assert download option" owner="Homepageresource">
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2024-07-15T09:26:41.836710" level="INFO">Element '//h4[text()="Download &amp; host your own"]' contains text 'Download &amp; host your own'.</msg>
+<arg>${downloadpg_l}</arg>
+<arg>Download &amp; host your own</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2024-07-15T09:26:41.784136" elapsed="0.058082"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:26:41.784136" elapsed="0.058082"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:26:41.784136" elapsed="0.058082"/>
+</kw>
+<kw name="Close the browser" owner="Genericresource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-15T09:26:41.842218" elapsed="2.348136"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:26:41.842218" elapsed="2.348136"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:26:31.600156" elapsed="12.590198"/>
+</test>
+<test id="s1-t6" name="To verify resource dropdown option" line="25">
+<kw name="Opening the browser with url" owner="Genericresource" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-15T09:26:44.190354" level="INFO">Opening browser 'Chrome' to base url 'https://www.opencart.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-15T09:26:44.190354" elapsed="7.808159"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-15T09:26:51.998513" elapsed="0.057472"/>
+</kw>
+<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-07-15T09:26:52.055985" elapsed="0.004287"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:26:44.190354" elapsed="7.869918"/>
+</kw>
+<kw name="To verify Showcase option">
+<kw name="Click resource" owner="Homepageresource">
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2024-07-15T09:26:52.060272" level="INFO">Selecting options from selection list '//a[text()="Resources "]' by index 1.</msg>
+<msg time="2024-07-15T09:26:52.305994" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-07-15T09:26:52.305994" level="FAIL">List with locator '//a[text()="Resources "]' not found.</msg>
+<arg>${resource_l}</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="FAIL" start="2024-07-15T09:26:52.060272" elapsed="0.265313">List with locator '//a[text()="Resources "]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-07-15T09:26:52.060272" elapsed="0.265313">List with locator '//a[text()="Resources "]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-07-15T09:26:52.060272" elapsed="0.265313">List with locator '//a[text()="Resources "]' not found.</status>
+</kw>
+<kw name="Close the browser" owner="Genericresource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-15T09:26:52.325585" elapsed="2.305302"/>
+</kw>
+<status status="PASS" start="2024-07-15T09:26:52.325585" elapsed="2.305302"/>
+</kw>
+<status status="FAIL" start="2024-07-15T09:26:44.190354" elapsed="10.441791">List with locator '//a[text()="Resources "]' not found.</status>
+</test>
+<doc>This page contains test case for home page</doc>
+<status status="FAIL" start="2024-07-15T09:25:38.381577" elapsed="76.251743"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="1" skip="0" id="s1" name="TestHomepage">TestHomepage</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
